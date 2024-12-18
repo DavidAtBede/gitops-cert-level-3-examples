@@ -8,6 +8,9 @@ spec:
   goTemplateOptions: ["missingkey=error"]
   generators:
   - pullRequest:
+      filters:
+      #- branchMatch: "-argocd"
+         labels: "preview-ready"
       github:
         owner: davidatbede
         repo: gitops-cert-level-3-examples
