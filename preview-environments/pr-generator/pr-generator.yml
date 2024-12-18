@@ -9,8 +9,7 @@ spec:
   generators:
   - pullRequest:
       filters:
-      #- branchMatch: "-argocd"
-         labels: "preview-ready"
+      - labels: "preview-ready"
       github:
         owner: davidatbede
         repo: gitops-cert-level-3-examples
